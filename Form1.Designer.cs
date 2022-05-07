@@ -29,48 +29,110 @@ namespace emgucv
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.toolStripMenuItemfile = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1open = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2exit = new System.Windows.Forms.ToolStripMenuItem();
+            this.massege = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // toolStripMenuItemfile
             // 
-            this.button1.Location = new System.Drawing.Point(3, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 34);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "open";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Form1_Load);
+            this.toolStripMenuItemfile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1open,
+            this.toolStripMenuItem2exit});
+            this.toolStripMenuItemfile.Name = "toolStripMenuItemfile";
+            this.toolStripMenuItemfile.Size = new System.Drawing.Size(44, 24);
+            this.toolStripMenuItemfile.Text = "file";
+            // 
+            // toolStripMenuItem1open
+            // 
+            this.toolStripMenuItem1open.Name = "toolStripMenuItem1open";
+            this.toolStripMenuItem1open.Size = new System.Drawing.Size(126, 26);
+            this.toolStripMenuItem1open.Text = "open";
+            // 
+            // toolStripMenuItem2exit
+            // 
+            this.toolStripMenuItem2exit.Name = "toolStripMenuItem2exit";
+            this.toolStripMenuItem2exit.Size = new System.Drawing.Size(126, 26);
+            this.toolStripMenuItem2exit.Text = "exit";
+            // 
+            // massege
+            // 
+            this.massege.Location = new System.Drawing.Point(0, 0);
+            this.massege.Name = "massege";
+            this.massege.Size = new System.Drawing.Size(100, 23);
+            this.massege.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(59, 82);
+            this.pictureBox1.Location = new System.Drawing.Point(26, 110);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(732, 352);
-            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.Size = new System.Drawing.Size(342, 273);
+            this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(540, 61);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "בחר תמונה";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(431, 61);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 29);
+            this.button2.TabIndex = 8;
+            this.button2.Text = "הצג צורות";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(458, 126);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(347, 285);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(843, 466);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load_1);
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemfile;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1open;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2exit;
+        private System.Windows.Forms.Label massege;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

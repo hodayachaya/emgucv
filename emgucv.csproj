@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoCAD.NET" Version="24.1.51000" />
+    <PackageReference Include="AutoCAD.NET.Core" Version="24.1.51000" />
+    <PackageReference Include="AutoCAD.NET.Model" Version="24.1.51000" />
     <PackageReference Include="Emgu.CV" Version="4.5.5.4823" />
     <PackageReference Include="Emgu.CV.Bitmap" Version="4.5.5.4823" />
     <PackageReference Include="Emgu.CV.runtime.windows" Version="4.5.5.4823" />
+    <PackageReference Include="netDXF" Version="2.2.0.1" />
+    <PackageReference Include="OpenCV" Version="2.4.11" />
+    <PackageReference Include="System.Windows.Extensions" Version="6.0.0" />
   </ItemGroup>
 
 </Project>
