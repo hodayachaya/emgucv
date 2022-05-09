@@ -123,7 +123,7 @@ namespace emgucv
                         Point currPoint = points[points.Count - 1];
                         while (points.Count > 0)
                         {
-                            if (currPoint.X != 0&& currPoint.X <=Width&&currPoint.Y<=Height && currPoint.Y != 0)
+                            if (currPoint.X <=image.Width&&  currPoint.Y <=image.Height)
                             {
                                 if (image.GetPixel(currPoint.X - 1, currPoint.Y - 1).B == 0)//שמאל למעלה
                                 {
@@ -150,7 +150,7 @@ namespace emgucv
                                     points.Add(new Point(currPoint.X - 1, currPoint.Y));
                                     image.SetPixel(currPoint.X-1, currPoint.Y, Color.Gray);
                                 }
-                                if (image.GetPixel(currPoint.X - 1, currPoint.Y + 1).B == 0&& currPoint.X - 1<Width && currPoint.Y + 1<Height)//שמאל למטה
+                                if (image.GetPixel(currPoint.X - 1, currPoint.Y + 1).B == 0)//שמאל למטה
                                 {
                                     points.Add(new Point(currPoint.X - 1, currPoint.Y+ 1));
                                     image.SetPixel(currPoint.X-1, currPoint.Y+1, Color.Gray);
@@ -197,7 +197,7 @@ namespace emgucv
                         for (int i = 0; i < shapePoints.Count(); i++)
                         {
                             Point p = shapePoints[i];
-                            b.SetPixel(p.X+1, p.Y+1, Color.Black);
+                            b.SetPixel(p.X, p.Y, Color.Black);
                         }
                         pictureBox1.Image = b;
                     }
